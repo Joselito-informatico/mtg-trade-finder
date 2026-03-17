@@ -22,11 +22,11 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/deck-builder" element={<DeckBuilder />} />  {/* ← público */}
 
             {/* Protegidas */}
             <Route element={<ProtectedRoute />}>
               <Route path="/collection" element={<Collection />} />
-              <Route path="/deck-builder" element={<DeckBuilder />} />
               <Route path="/trade-finder" element={<TradeFinder />} />
             </Route>
           </Routes>
